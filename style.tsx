@@ -20,20 +20,18 @@ const styles = StyleSheet.create({
     },
 
     dishName:{
-      backgroundColor: 'red',
+      backgroundColor: '#FFD700',
       alignContent: 'center',
       alignItems: 'center',
       fontSize: 50,
       padding: 10,
-      textAlign: 'center',
-      borderRadius: 15,
+      textAlign: 'center'
     },
 
     dishDescription:{
       fontSize: 20,
       textAlign: 'center',
-      backgroundColor: '#F0E68C',
-      borderRadius: 10
+      backgroundColor: '#F0E68C'
     },
     
     header:{
@@ -44,16 +42,13 @@ const styles = StyleSheet.create({
     },
 
     backgroundMenu:{
-      backgroundColor: 'black',
-      borderWidth: 5,
-      borderColor: 'black',
-      borderRadius: 20,
+      borderWidth: 2,
+      borderColor: '#F0E68C',
       margin: 5
     },
     
     buttonAdd:{
-      borderRadius: 15, 
-      backgroundColor:'#34C924',
+      backgroundColor:'#00FF00',
       alignItems: 'center',
       fontSize: 30,
       height: 50     

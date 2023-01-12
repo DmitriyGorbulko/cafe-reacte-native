@@ -6,6 +6,8 @@ import Menu from './Menu';
 import About from './About';
 import { Ionicons, MaterialIcons } from '@expo/vector-icons';
 import Basket from './Basket';
+import { Test } from '../api/service/Test';
+import Category from './Category';
 
 const Tab = createBottomTabNavigator();
 
@@ -19,7 +21,7 @@ const BottonNavigation = () => {
           ),
         }}/>
 
-        <Tab.Screen name="Меню" component={Menu} options={{
+        <Tab.Screen name="Меню" component={Category} options={{
           tabBarIcon: ({ size, color }) => (
             <MaterialIcons name='restaurant-menu' size={size} color={color}></MaterialIcons>
           ),}}/>

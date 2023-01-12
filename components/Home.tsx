@@ -1,10 +1,11 @@
 import { View, Text } from 'react-native'
 import React from 'react'
+import { Test } from '../api/service/Test'
 
 const Home = () => {
   return (
     <View>
-      <Text>home</Text>
+      <Test/>
     </View>
   )
 }
