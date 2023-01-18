@@ -1,13 +1,19 @@
-import { View, Text } from 'react-native'
-import React from 'react'
-import { Test } from '../api/service/Test'
+import { View, Text, Pressable } from 'react-native';
+import React from 'react';
+import { Test } from '../api/service/Test';
+import { useAuth } from '../api/service/Auth';
 
 const Home = () => {
+  const { logout } = useAuth();
+
   return (
     <View>
-      <Test/>
+      <Pressable onPress={logout}>
+        <Text>Выйти из аккаунта</Text>
+      </Pressable>
+      <Test />
     </View>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
