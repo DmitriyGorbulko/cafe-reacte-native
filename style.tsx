@@ -43,8 +43,9 @@ const styles = StyleSheet.create({
 
     backgroundMenu:{
       borderWidth: 2,
-      borderColor: '#F0E68C',
+      borderColor: 'black',
       margin: 5
+
     },
     
     buttonAdd:{
@@ -52,6 +53,10 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       fontSize: 30,
       height: 50     
+    },
+    inputCategory:{
+      borderWidth: 1,
+      borderColor: 'black'
     }
 
   });

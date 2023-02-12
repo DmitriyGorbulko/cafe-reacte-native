@@ -8,6 +8,7 @@ import { Ionicons, MaterialIcons } from '@expo/vector-icons';
 import Basket from './Basket';
 import { Test } from '../api/service/Test';
 import Category from './Category';
+import CategoryAdd from './CategoryAdd';
 
 const Tab = createBottomTabNavigator();
 
@@ -17,7 +18,7 @@ const BottonNavigation = () => {
       <Tab.Navigator>
         <Tab.Screen
           name="Главное"
-          component={Home}
+          component={CategoryAdd}
           options={{
             tabBarIcon: ({ size, color }) => (
               <Ionicons name="md-home" size={size} color={color} />
@@ -41,7 +42,7 @@ const BottonNavigation = () => {
 
         <Tab.Screen
           name="Корзина"
-          component={Menu}
+          component={Basket}
           options={{
             tabBarIcon: ({ size, color }) => (
               <Ionicons

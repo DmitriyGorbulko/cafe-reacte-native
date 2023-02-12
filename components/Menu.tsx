@@ -6,7 +6,7 @@ import { IDish } from '../api/models/Interfaces'
 import styles from '../style'
 
 
-const Menu = () => {
+const Menu = (id : number) => {
   const [isLoading, setIsLoading] = useState(false);
   const [data, setData] = useState({} as IDish[]);
 
